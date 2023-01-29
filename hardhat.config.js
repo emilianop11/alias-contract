@@ -8,8 +8,8 @@ module.exports = {
     },
     matic: {
       chainId: 137,
-      url: "https://polygon-mainnet.infura.io/v3/<key>",
-      accounts: ["a private key"]
+      url: process.env.POLYGON_RPC_URL,
+      accounts: [process.env.OWNER_PRIVATE_KEY]
     }
   },
 };
